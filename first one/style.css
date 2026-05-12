@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+      background-color: black;
+}
+main{
+  
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}.logo i{
+  
+    padding-right: 10px;
+}
+nav .logo{
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav .nav-links{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    
+}
+nav .nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav .nav-links li a:hover{
+    color: #ff6347;
+}
+nav .nav-button{
+    padding: 15px 30px;
+    background-color:rgba(27, 19, 19, 0.477);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .nav-button:hover{
+    background-color: white;
+    color: black;
+}
+.hero h2{
+    font-size: 150px;
+    text-align: center;
+    margin-top: 80px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin-top: 50px;
+}
+.options li a{
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.options li a:hover{
+    background-color: red;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.container .card{
+    background-color: rgba(27, 19, 19, 0.477);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: start;
+
+}
+.card img{
+    height: 250px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.card h3 button{
+   
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: rgba(192, 31, 31, 0.61);
+
+   color:white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card h3 ,.card p ,.card p{
+    margin-top: 13px;
+}
+.card p{
+    color: gray;
+}
+.card h3{
+    font-size: 50px;
+}
