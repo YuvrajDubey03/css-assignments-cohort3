@@ -131,9 +131,9 @@ nav h1{
 
 .center-image{
     position: absolute;
-    left: 50%;
+    left: 49%;
     top: 53%;
-    transform: translate(-50%,-50%);
+    transform: translate(-48%,-50%);
     z-index: 10;
 }
 
