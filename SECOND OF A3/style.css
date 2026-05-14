@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #12030f;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 60px;
+    background: linear-gradient(120deg,#1a0611,#33001a,#17001f);
+    overflow: hidden;
+}
+
+
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: hotpink;
+    text-decoration: underline;
+}
+
+.menu i{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+
+.hero{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+
+
+
+.left{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+.left h1{
+    color: white;
+    font-size: 95px;
+    line-height: 85px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.left p{
+    color: #d0d0d0;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button{
+    padding: 16px 28px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-btn{
+    background: linear-gradient(to right,#ff0077,#ff9a00);
+    color: white;
+}
+
+.trailer-btn{
+    background: transparent;
+    border: 1px solid hotpink !important;
+    color: white;
+}
+
+
+
+
+.center{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.scroll span{
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.line{
+    width: 2px;
+    height: 120px;
+    background: hotpink;
+}
+
+
+
+
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.right img{
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+}
+
+.socials{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socials i{
+    color: hotpink;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+.cards{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    margin-top: -40px;
+}
+
+.card{
+    width: 33.33%;
+    height: 180px;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.play{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.play i{
+    color: white;
+    font-size: 20px;
+}
