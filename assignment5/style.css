@@ -1,0 +1,269 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+font-family:"Segoe UI",sans-serif;
+}
+
+.container{
+border:20px solid white;
+width:100%;
+height:100%;
+background:url(hero.avif);
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav span{
+font-size:30px;
+font-weight:bold;
+padding:20px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+padding:20px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+
+nav ul li:nth-child(3){
+border:2px solid white;
+padding:5px 10px;
+}
+
+.menu{
+display:none;
+font-size:35px;
+cursor:pointer;
+padding:20px;
+}
+
+.hero{
+height:80%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:180px;
+}
+
+.hero h3{
+font-size:30px;
+position:relative;
+}
+
+.hero h3::after{
+content:"";
+width:80px;
+height:4px;
+background:black;
+position:absolute;
+left:50%;
+bottom:-15px;
+transform:translateX(-50%);
+}
+
+
+.articles{
+min-height:100%;
+background:#ddd;
+padding-bottom:50px;
+}
+
+.heading{
+text-align:center;
+padding-top:60px;
+margin-bottom:100px;
+}
+
+.heading h3{
+font-size:40px;
+font-weight:400;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:100px;
+flex-wrap:wrap;
+}
+
+.card{
+width:350px;
+height:500px;
+background:white;
+box-shadow:10px 10px 20px #999;
+}
+
+.card img{
+width:100%;
+height:50%;
+object-fit:cover;
+}
+
+.card h3{
+text-align:center;
+margin-top:120px;
+}
+
+
+.about{
+height:100%;
+display:flex;
+}
+
+.about-img{
+width:50%;
+}
+
+.about-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.about-text{
+width:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+gap:40px;
+padding:80px;
+}
+
+.about-text h3{
+font-size:40px;
+}
+
+.about-text p{
+font-size:20px;
+text-align:center;
+line-height:30px;
+}
+
+
+.subscribe{
+height:400px;
+background:#ddd;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+gap:20px;
+}
+
+.subscribe h2{
+font-size:40px;
+}
+
+.subscribe input{
+width:400px;
+padding:15px;
+}
+
+.subscribe button{
+padding:12px 40px;
+background:transparent;
+}
+
+
+footer{
+height:150px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+}
+
+.social{
+display:flex;
+gap:20px;
+}
+
+footer ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+}
+
+.menu{
+display:block;
+}
+
+.container{
+border:10px solid white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero h3{
+font-size:15px;
+}
+
+.cards{
+gap:40px;
+}
+
+.card{
+width:300px;
+height:450px;
+}
+
+.about{
+height:auto;
+flex-direction:column;
+}
+
+.about-img{
+width:100%;
+}
+
+.about-text{
+width:100%;
+padding:40px;
+}
+
+.subscribe input{
+width:80%;
+}
+
+footer{
+height:auto;
+flex-direction:column;
+gap:20px;
+}
+
+}
